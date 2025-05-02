@@ -58,7 +58,7 @@ async function addStudent(e) {
     if (!response.ok) throw new Error('Помилка при додаванні студента');
     getStudents();
     e.target.reset();
-  } catch (error) {
+  } catch (error) { 
     console.error('Помилка POST:', error);
   }
 }
